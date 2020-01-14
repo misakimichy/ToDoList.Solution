@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System; // Add this if you want to use Console.WriteLine() in test method.
+using System;
 using System.Collections.Generic;
 using ToDoList.Models;
 

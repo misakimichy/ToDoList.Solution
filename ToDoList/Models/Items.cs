@@ -24,7 +24,7 @@ namespace ToDoList.Models
       List<Item> allItems = new List<Item> {};
       MySqlConnection conn = DB.Connection();
       conn.Open();
-      MySqlCommand cmd = conn.CreateCOmmand() as MySqlCommand;
+      MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
       cmd.CommandText = @"SELECT * FROM items;";
       MySqlDataReader rdr = cmd.ExecuteReader() as MySqlDataReader;
       while (rdr.Read())
