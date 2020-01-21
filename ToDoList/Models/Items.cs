@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 namespace ToDoList.Models
 {
@@ -14,6 +15,13 @@ namespace ToDoList.Models
 
     public bool Done { get; set; }
 
+    public DateTime Date { get; set; }
+
     public ICollection<CategoryItem> Categories { get;}
+
+    public string SetDate()
+    {
+      return this.Date.ToString("yyyy-MM-dd");
+    }
   }
 }

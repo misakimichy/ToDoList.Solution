@@ -12,6 +12,9 @@
 
     @Html.Label("Select category")
     @Html.DropDownList("CategoryId")
+
+    @Html.Label("Due Date(yyyy-MM-dd)")
+    @Html.TextBoxFor(model => model.Date)
     <input type="submit" value="Add new item" class="btn btn-default" />
 }
 <p>@Html.ActionLink("Show all items", "Index")</p>

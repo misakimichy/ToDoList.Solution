@@ -18,6 +18,9 @@
     @Html.Label("Select category")
     @Html.DropDownList("CategoryId")
 
+    @Html.Label("Due Date(yyyy-MM-dd)")
+    @Html.TextBoxFor(model => model.Date)
+
     @Html.Label("Did you complete your item?")
     @Html.CheckBoxFor(model => model.Done)
 
